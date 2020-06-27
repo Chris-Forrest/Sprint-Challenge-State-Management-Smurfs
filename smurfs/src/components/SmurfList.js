@@ -11,6 +11,10 @@ const SmurfList = ({ fetchSmurfs, smurfs, isFetching, error}) => {
         fetchSmurfs()
     },[fetchSmurfs])
 
+    if(error){
+       return <h2>{error}</h2>
+    }
+    
     return(
         <div>
            <div className='smurfs'>

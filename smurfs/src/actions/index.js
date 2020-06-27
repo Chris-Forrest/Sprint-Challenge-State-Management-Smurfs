@@ -18,3 +18,7 @@ export const fetchSmurfs = () => dispatch => {
         })
         
 }
+
+export const postSmurf = (object) => dispatch => {
+    dispatch({ type: CREATE_SMURF, payload: object })
+}

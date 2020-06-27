@@ -1,4 +1,4 @@
-import { FETCH_SMURFS_START, FETCH_SMURFS_SUCCESS, FETCH_SMURFS_FAILURE } from "../actions";
+import { FETCH_SMURFS_START, FETCH_SMURFS_SUCCESS, FETCH_SMURFS_FAILURE, CREATE_SMURF } from "../actions";
 
 
 /****************set up initial state  ******************************/
@@ -27,6 +27,12 @@ export const smurfReducer = ( state = initialState, action ) => {
             return{
                 ...state,
                 error: " error fetching smurfs :( !"
+            }
+        case CREATE_SMURF:
+            console.log(action.payload)
+            return {
+                ...state,
+                smurfs:[...state.smurfs,action.payload]
             }
         default:
             return state
