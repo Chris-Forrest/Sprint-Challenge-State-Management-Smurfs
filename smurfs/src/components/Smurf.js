@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Smurf = () => {
+const Smurf = ({ smurf }) => {
 
     return(
         <div>
-            <h3>Smurf name: </h3>
-            <h4>Age: </h4>
-            <h4>Height: </h4>
+            <h3>Smurf name: {smurf.name} </h3>
+            <h4>Age: {smurf.age} </h4>
+            <h4>Height: {smurf.height} </h4>
         </div>
     )
 

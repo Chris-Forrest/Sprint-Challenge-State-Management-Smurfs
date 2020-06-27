@@ -22,7 +22,7 @@ const SmurfForm = () => {
             <input
             name='height'
             />
-            
+
         </form>
     )
 
